@@ -1,0 +1,35 @@
+Style.css
+
+.header{
+  background-color: #aba361;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-color: #420c14;
+  font-family: "space grotesk",sans-serif;
+  font-weight: 500;
+}
+
+
+.body {
+  font-family: "space grotesk",sans-serif;
+  font-weight: 300;
+  font-color: #420c14;
+}
+
+.section1 {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+.section2 {
+  background-color: #aba361;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
