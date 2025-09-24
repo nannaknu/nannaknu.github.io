@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="BoxModel.css">
-</head>
-<body>
+BoxModel.css
 .section1 {
   background-color: lightgrey;
   width: 300px;
@@ -19,7 +14,4 @@
   padding: 50px;
   margin: 20px;
 }
-</body>
-</html>
-</head>
-<body>
+
