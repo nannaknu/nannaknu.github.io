@@ -1,41 +1,69 @@
-Style.css
-
-.header{
+h1{
+  font-family: "Six Caps", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   background-color: #aba361;
   padding: 30 px;
   text-align: center;
   font-size: 35 px;
   font-color: #420c14;
-  font-family: "space grotesk",sans-serif;
-  font-weight: 500;
 }
-.nav {
-  font-family: "space grotesk",sans-serif;
+
+p1{
+  font-family: "space grotesk", sans-serif;
   font-weight: 500;
-  font-size: 20 px;
+  font-style: normal;
+  background-color: #aba361;
+  padding:px;
+  text-align: center;
+  font-size: 35 px;
   font-color: #420c14;
 }
 
-.body {
+h2{
+   font-family: "space grotesk",sans-serif;
+  font-weight: 400;
+  font-size: 25 px;
+  font-color: #420c14;
+}
+
+ul,li{
+  list-style-type: none;
+  font-family: "Six Caps", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: left;
+  font-size: 15 px;
+  font-color: #183a37;
+  background-color: #aba361;
+  
+  border: 5 px;
+  padding:5 px;
+  margin: 5 px;
+}
+
+
+body {
   font-family: "space grotesk",sans-serif;
   font-weight: 300;
+  font-size: 15 px;
   font-color: #420c14;
+ 
 }
 
 .section1 {
-  background-color: lightgrey;
-  width: 300 px;
-  border: 15 px solid green;
-  padding: 50 px;
-  margin: 20 px;
+  background-color: #aba361;
+  width: px;
+  border: 5 px;
+  padding: 5 px;
+  margin:  5 px;
 }
 
 .section2 {
-  background-color: #aba361;
-  width: 300 px;
-  border: 15 px solid green;
-  padding: 50 px;
-  margin: 20 px;
+  background-color: #bb8588;
+  width: px;
+  border: 5 px;
+  padding: 20 px;
+  margin: 5 px;
 }
-
 
