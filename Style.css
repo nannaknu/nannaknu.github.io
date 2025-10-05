@@ -1,69 +1,173 @@
-h1{
-  font-family: "Six Caps", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  background-color: #aba361;
-  padding: 30 px;
-  text-align: center;
-  font-size: 35 px;
-  font-color: #420c14;
+@font-face {
+  font-family: MyFirstFont;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2);
+  font-display: swap;
 }
 
-p1{
-  font-family: "space grotesk", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  background-color: #aba361;
-  padding:px;
-  text-align: center;
-  font-size: 35 px;
-  font-color: #420c14;
+@font-face {
+  font-family: MySecFont;
+  src: url(https://fonts.gstatic.com/s/sixcaps/v23/6ae_4KGrU7VR7bNmaYcV_3Q.woff2);
+  font-display: swap;
 }
-
-h2{
-   font-family: "space grotesk",sans-serif;
-  font-weight: 400;
-  font-size: 25 px;
-  font-color: #420c14;
-}
-
-ul,li{
-  list-style-type: none;
-  font-family: "Six Caps", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-align: left;
-  font-size: 15 px;
-  font-color: #183a37;
-  background-color: #aba361;
-  
-  border: 5 px;
-  padding:5 px;
-  margin: 5 px;
-}
-
 
 body {
-  font-family: "space grotesk",sans-serif;
+  background-color: #edddd4;
+}
+
+#clock {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  border-color:#5ecde1;
+  border-style:groove;
+  justify-content:left;
+  align-items: flex-start;
+  }
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "menu header header header"
+    "content content content content";
+
+  grid-template-columns: 120px auto auto auto;
+  gap: px;
+  padding: px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background: opacity 0.9;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background: opacity 0.7;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+  body {
+    background: opacity 0.5;
+  }
+}
+
+.container>nav.menu {
+  grid-area: menu;
+  align-items: left;
+  font-family: MySecFont;
   font-weight: 300;
-  font-size: 15 px;
-  font-color: #420c14;
- 
+  font-size: 2.6vw;
+  font-style: normal;
+  gap: 10px;
+  color:#FFFFFF;
+  background-color: #723d46;
+  border: 5px;
+  padding: 5px;
+
 }
 
-.section1 {
-  background-color: #aba361;
+
+.container>nav.menu.a {
+  grid-area: menu;
+  text-decoration: none;
+  font-family: MySecFont;
+  font-weight: 300;
+  font-size: 2.6vw;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+
+.container>nav.menu.a:hover {
+  grid-area: menu;
+  background-color: #d0ddd7;
+  color:#420c14;
+}
+
+.container>section.header {
+  grid-area: header;
+  text-align: center;
+  font-family: MySecFont;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #d0ddd7;
+  padding: 20px;
+  margin: px;
+  justify-content: center;
+  font-size: 4.5vw;
+  color: #420c14;
+}
+
+h1 {
+  font-family: MySecFont;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.5vw;
+  padding: 15px;
+  text-align: center;
+  color: #420c14;
+}
+
+h2 {
+  font-family: MyFirstFont;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5vw;
+  color: #420c14;
+}
+
+h3 {
+  font-family: MyFirstFont;
+  font-weight: 400;
+  font-size: 1.4vw;
+  color: #472d30;
+}
+
+
+
+.container>gallery {
+  display: grid;
+  flex-grow: ;
+}
+
+.container>img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+}
+
+.container>p.content {
+  grid-area: content;
+  font-family: MyFirstFont;
+  font-weight: 300;
+  font-size: 1.3vw;
+  color: #420c14;
+  text-align: justify;
+
+}
+
+
+.container>section1 {
+  background-color: #FFFFFF;
   width: px;
-  border: 5 px;
-  padding: 5 px;
-  margin:  5 px;
+  border: 5px;
+  padding: 35px;
 }
 
-.section2 {
-  background-color: #bb8588;
+.container>section2 {
+  background-color: #723d46;
   width: px;
-  border: 5 px;
-  padding: 20 px;
-  margin: 5 px;
+  height: 500px;
+  border: 5px;
+  padding: 35px;
 }
-
