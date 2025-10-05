@@ -60,11 +60,12 @@ body {
 
 .container>nav.menu {
   grid-area: menu;
-  align-items: left;
+  place-items: left;
   font-family: MySecFont;
   font-weight: 300;
   font-size: 2.6vw;
   font-style: normal;
+  
   gap: 10px;
   color:#FFFFFF;
   background-color: #723d46;
@@ -169,5 +170,6 @@ h3 {
   border: 5px;
   padding: 35px;
 }
+
 
 
