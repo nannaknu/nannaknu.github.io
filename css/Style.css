@@ -19,22 +19,27 @@ background-color:  hsla(22, 50%, 84%, 0.3);
   padding: 0;
 }
 
+/* Perustyyli (desktop ja suuret näytöt) */
+section.img {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px ja alle) */
 @media only screen and (max-width: 768px) {
   section.img {
-  width: calc(70% - 20px);
-  height: auto;
+    width: 70%;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets ja suuret puhelimet, 480px ja alle) */
 @media only screen and (max-width: 480px) {
   section.img {
-    width: calc(80% - 20px);
-    height: auto;
+    width: 85%;
   }
 }
+
 
 
 /* Grid-structure general*/
@@ -266,6 +271,7 @@ p {
   width: 40%;
   margin: 0 auto; /* Keskittää elementin */
 }
+
 
 
 
