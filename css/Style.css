@@ -37,6 +37,14 @@ background-color:  hsla(22, 50%, 84%, 0.3);
   section.img {
     width: 70%;
   }
+  .container {
+    grid-template-areas:
+      "header"
+      "menu"
+      "img"
+      "content";
+    grid-template-columns: 1fr;
+  }
   .gallery > p.text,
   .gallery > section.images,
   .about.text,
@@ -190,7 +198,8 @@ color: #420c14;
 /*Content*/
 .container>section.content {
   grid-area: content;
-  display: flex-start;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   max-width: auto;
   padding: 10px;
@@ -303,6 +312,7 @@ p {
   width: 40%;
   margin: 0 auto; /* Keskittää elementin */
 }
+
 
 
 
