@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
+	<meta charset="UTF-8" />
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Six+Caps&family=Space+Grotesk:wght@500&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-  <title>Project 1</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="" />
-  <link rel="stylesheet" href="Style.css">
+	<title>Project 1</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="./css/Style.css">
 </head>
+
 <body>
-	<nav>
-	<ul>
-	<li><a href="index.html">Home</a></li>
-	<li><a href="project1.html">Project 1</a></li>
-	<li><a href="project2.html">Project 2</a></li>
-	<li><a href="project3.html">Project 3</a></li>
-	<li><a href="project4.html">Project 4</a></li>
-	<li><a href="project5.html">Project 5</a></li>
-	<li><a href="aboutme.html">About me</a></li>
-	</ul>
-	</nav>
+	<div class="container">
 
+		<nav class="menu">
+			<a href="index.html">Home</a>
+			<a href="project1.html">Project 1</a>
+			<a href="project2.html">Project 2</a>
+			<a href="project3.html">Project 3</a>
+			<a href="project4.html">Project 4</a>
+			<a href="project5.html">Project 5</a>
+			<a href="aboutme.html">About me</a>
+		</nav>
 
+		<section class="header">
+			<h1>Style creation with Copilot</h1>
+			<h2>Project 1</h2>
+		</section>
+
+		<span class="contact">
+			<a id="in" href="https://www.linkedin.com" target="_blank"> in </a>
+			<br>
+			<br>
+			<a id="mail" href="#" class="email" onclick="copyEmail()"> @ </a>
+			<script src="./js/contact.js"></script>
+		</span>
+
+		<section class="img">
+			<img class="item1" src="./img/1920s.png" alt="Person in 1920s">
+			<img class="item2" src="./img/1950s.png" alt="Person in 1950s">
+			<img class="item3" src="./img/1970s.png" alt="Person of 1970s">
+			<img class="item4" src="./img/1990s.png" alt="Art style 1990s">
+		</section>
+
+		<section class="content">
+			<h3>Typical styles of art and time according to Copilot</h3>
+			<p> Created a character and styles of different decades with Copilot.</p>
+			<p class="item1">1920s: Artist in New York in 1920s. </p>
+			<p class="item2"> 1950s: At a restaurant in 1950s New York</p>
+			<p class="item3">1970s: Artist in New York</p>
+			<p class="item4">1990s: Modern art style of 1990s</p>
+		</section>
+
+	</div>
 </body>
+
 </html>
