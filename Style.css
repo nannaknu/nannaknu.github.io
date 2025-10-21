@@ -1,1 +1,268 @@
+/*Fonts*/
+@font-face {
+  font-family: MyFirstFont;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MySecFont;
+  src: url(https://fonts.gstatic.com/s/sixcaps/v23/6ae_4KGrU7VR7bNmaYcV_3Q.woff2);
+  font-display: swap;
+}
+
+
+/*BODY*/
+body {
+background-color:  hsla(22, 50%, 84%, 0.3);
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  section.img {
+  width: calc(80% - 20px);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 480px) {
+  section.img {
+    width: calc(90% - 20px);
+  }
+}
+
+
+/* Grid-structure general*/
+.container {
+  display: grid;
+  grid-template-areas:
+    "menu header header header"
+    "img img content content";
+
+  grid-template-columns: 140px auto auto auto;
+  
+}
+
+/* Grid-structure Index page*/
+.gallery {
+  display: grid;
+  grid-template-areas:
+    "text"
+    "images";
+  justify-content: center; /* Keskittää gridin vaakasuunnassa */
+  align-items: center;     /* Keskittää gridin pystysuunnassa */
+  grid-template-columns: 1fr; /* Yksi joustava sarake */
+  min-height: 100vh; /* Varmistaa että grid vie koko sivun korkeuden */
+}
+
+/* Index page gallery */
+.gallery > p.text {
+  grid-area: text;
+  text-align: center;
+  padding: 50px 0;
+  width: 40%;
+  margin: 0 auto; /* Keskittää elementin */
+}
+
+/* Index page images */
+.gallery > section.images {
+  grid-area: images;
+  text-align: center;
+  padding: 15px 0;
+  width: 40%;
+  margin: 0 auto; /* Keskittää elementin */
+}
+
+/*Index page images headers*/
+.gallery > section.images a{
+text-decoration: none;
+color: #420c14;
+}
+
+/*Navigation*/
+.container>nav.menu {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  max-width: 140px;
+  background-color: #723d46;
+}
+
+.container>nav.menu a {
+  font-family: MyFirstFont;
+  font-weight: 300;
+  font-size: 1vw;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  background-color: #723d46;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 5px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.container>nav.menu a:hover {
+  background-color: #d0ddd7;
+  color: #420c14;
+}
+
+/*contact links*/
+#in {
+  font-family: MyFirstFont;
+  font-weight: 500;
+  font-size: 2vw;
+  color: #723d46;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  position: absolute;
+  top: 80px;
+  right: 60px;
+}
+
+#mail {
+  font-family: MyFirstFont;
+  font-weight: 500;
+  font-size: 2vw;
+  color: #723d46;
+  padding: 10px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  position: absolute;
+  top: 120px;
+  right: 60px;
+}
+
+/*Header*/
+.container> section.header {
+  grid-area: header;
+  text-align: center;
+  grid-auto-columns: auto;
+  background-color: #d0ddd7;
+  padding: 5px;
+  margin: 0px;
+}
+
+/*Content*/
+.container>section.content {
+  grid-area: content;
+  display: flex-start;
+  text-align: center;
+  max-width: auto;
+  padding: 10px;
+}
+
+/*img*/
+.container>section.img {
+  grid-area: img;
+  display: grid;
+  grid-template-columns:auto;
+  grid-template-rows: auto auto auto;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  border: 4px solid #ddd;
+  border-radius: 4px;
+}
+
+img.about{
+  display: block;
+  max-width: 600px;
+  border: 4px solid #ddd;
+  border-radius: 4px;
+}
+
+/*Clock*/
+#clock {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #723d46;
+  color: #FFFFFF;
+  padding: 5px;
+  border: 1px groove #420c14;
+  text-shadow: 2px 2px 2px #000000;
+}
+
+
+/*Header titles*/
+h1 {
+  font-family: MySecFont;
+  font-weight: 400;
+  font-size: 4.8vw;
+  letter-spacing: 3px;
+  font-style: normal;
+  text-decoration: underline;
+  padding: 15px;
+  text-align: center;
+  color: #420c14;
+}
+
+h2 {
+  font-family: MyFirstFont;
+  font-weight: 500;
+  font-style: normal;
+  padding: 5px;
+  font-size: 1.5vw;
+  color: #420c14;
+}
+
+/*Content titles and text*/
+h3 {
+  font-family: MySecFont;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5vw;
+  letter-spacing: 2.5px;
+  padding: 15px;
+  text-align: center;
+  color: #420c14;
+}
+
+p {
+  font-family: MyFirstFont;
+  font-weight: 500;
+  font-style: normal;
+  padding: 10px;
+  font-size: 1.5vw;
+  text-align: center;
+  color: #420c14;
+
+}
+
+/* Grid-structure About- page*/
+.about {
+  display: grid;
+  grid-template-areas:
+    "text"
+    "images text";
+  justify-content: center; /* Keskittää gridin vaakasuunnassa */
+  align-items: center;     /* Keskittää gridin pystysuunnassa */
+  grid-template-columns: 1fr 1fr; /* kaksi joustavaa saraketta */
+  min-height: 100vh; /* Varmistaa että grid vie koko sivun korkeuden */
+}
+
+/* About- page*/
+.about.text {
+  grid-area: text;
+  text-align: center;
+  padding: 70px 0;
+  width: 40%;
+  margin: 0 auto; /* Keskittää elementin */
+}
+
+/* About- page */
+.about.images {
+  grid-area: images;
+  text-align: left;
+  padding: 20px 0;
+  width: 40%;
+  margin: 0 auto; /* Keskittää elementin */
+}
+
 
