@@ -94,7 +94,7 @@ color: #420c14;
   grid-area: menu;
   display: flex;
   flex-direction: column;
-  max-width: 140px;
+  max-width: 20%;
   background-color: #723d46;
 }
 
@@ -271,6 +271,7 @@ p {
   width: 40%;
   margin: 0 auto; /* Keskittää elementin */
 }
+
 
 
 
