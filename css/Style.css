@@ -23,14 +23,16 @@ background-color:  hsla(22, 50%, 84%, 0.3);
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
   section.img {
-  width: calc(80% - 20px);
+  width: calc(70% - 20px);
+  height: auto;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 480px) {
   section.img {
-    width: calc(90% - 20px);
+    width: calc(80% - 20px);
+    height: auto;
   }
 }
 
@@ -42,7 +44,7 @@ background-color:  hsla(22, 50%, 84%, 0.3);
     "menu header header header"
     "img img content content";
 
-  grid-template-columns: 140px auto auto auto;
+  grid-template-columns: 20% auto auto auto;
   
 }
 
@@ -119,8 +121,8 @@ color: #420c14;
   text-decoration: none;
   margin-bottom: 5px;
   position: absolute;
-  top: 80px;
-  right: 60px;
+  top: 60px;
+  right: 50px;
 }
 
 #mail {
@@ -132,8 +134,8 @@ color: #420c14;
   text-decoration: none;
   margin-bottom: 5px;
   position: absolute;
-  top: 120px;
-  right: 60px;
+  top: 80px;
+  right: 50px;
 }
 
 /*Header*/
@@ -251,7 +253,7 @@ p {
 .about.text {
   grid-area: text;
   text-align: center;
-  padding: 70px 0;
+  padding: 20px 0;
   width: 40%;
   margin: 0 auto; /* Keskittää elementin */
 }
@@ -264,5 +266,6 @@ p {
   width: 40%;
   margin: 0 auto; /* Keskittää elementin */
 }
+
 
 
