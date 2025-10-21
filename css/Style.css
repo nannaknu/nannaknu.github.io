@@ -19,27 +19,60 @@ background-color:  hsla(22, 50%, 84%, 0.3);
   padding: 0;
 }
 
-/* Perustyyli (desktop ja suuret näytöt) */
-section.img {
-  width: 60%;
-  height: auto;
-  margin: 0 auto;
+/* Extra large devices (desktop >1440px) */
+@media only screen and (min-width: 1440px) {
+  section.img {
+    width: 50%;
+  }
+  .gallery > p.text,
+  .gallery > section.images,
+  .about.text,
+  .about.images {
+    width: 35%;
+  }
 }
 
-/* Medium devices (landscape tablets, 768px ja alle) */
+/* Medium devices (landscape tablets, ≤768px) */
 @media only screen and (max-width: 768px) {
   section.img {
     width: 70%;
   }
+  .gallery > p.text,
+  .gallery > section.images,
+  .about.text,
+  .about.images {
+    width: 60%;
+  }
+  h1 {
+    font-size: 6vw;
+  }
+  h2, h3, p {
+    font-size: 2.5vw;
+  }
 }
 
-/* Small devices (portrait tablets ja suuret puhelimet, 480px ja alle) */
+/* Small devices (phones, ≤480px) */
 @media only screen and (max-width: 480px) {
   section.img {
     width: 85%;
   }
+  .gallery > p.text,
+  .gallery > section.images,
+  .about.text,
+  .about.images {
+    width: 80%;
+  }
+  h1 {
+    font-size: 7vw;
+  }
+  h2, h3, p {
+    font-size: 3.5vw;
+  }
+  #in, #mail, #clock {
+    right: 10px;
+    font-size: 4vw;
+  }
 }
-
 
 
 /* Grid-structure general*/
@@ -128,6 +161,7 @@ color: #420c14;
   position: absolute;
   top: 60px;
   right: 50px;
+  
 }
 
 #mail {
@@ -269,6 +303,7 @@ p {
   width: 40%;
   margin: 0 auto; /* Keskittää elementin */
 }
+
 
 
 
